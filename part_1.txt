@@ -1,0 +1,36 @@
+Part 1: Discussion Questions
+
+Recursion
+
+In your own words, what is recursion?
+
+Recursion is when a function calls itself, and has a base case that fulfills some kind of requirement. It's an elegant way of articulating an iteration. (Not always, sometimes a good old loop just makes more sense.)
+
+Why is it necessary to have a base case?
+
+So that the recursive function can fulfill a requirement. Otherwise it will go on forever!
+
+Graphs
+
+What is a graph?
+
+A graph is a tree-like data structure that contains loops, or cycles. The relationships between nodes can be directed or non-directed. Basic units are nodes, which are connected by edges. These edges can have a weight attached to them.
+
+How is a graph different from a tree?
+
+Trees do not have loops.
+
+Give an example of something that would be good to model with a graph.
+
+Find shortest distance between point A and point B on a map.
+
+function upToTen(num) {
+    var num = num || 0;
+
+    if (num === 10) {
+        return "at ten";
+    } else {
+        num += 1;
+        upToTen(num);
+    }
+}
